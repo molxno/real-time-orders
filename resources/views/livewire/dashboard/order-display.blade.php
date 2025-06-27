@@ -158,6 +158,7 @@
             progressBarWidth: 1,
             currentStatus: '',
             init() {
+                @if($order)
                 this.currentStatus = '{{$order->status}}';
                 this.updateProgressBar();
 
@@ -166,6 +167,10 @@
                         this.currentStatus = e.status;
                         this.updateProgressBar();
                     });
+                @else
+                this.currentStatus = 'pending';
+                this.updateProgressBar();
+                @endif
             },
             updateProgressBar() {
                 if (this.currentStatus === 'processing') {

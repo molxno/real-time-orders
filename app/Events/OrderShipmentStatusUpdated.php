@@ -23,6 +23,16 @@ class OrderShipmentStatusUpdated implements ShouldBroadcast
     }
 
     /**
+     * Get the order associated with the event.
+     *
+     * @return Order
+     */
+    public function getOrder(): Order
+    {
+        return $this->order;
+    }
+
+    /**
      * Get the channels the event should broadcast on.
      *
      * @return Channel
