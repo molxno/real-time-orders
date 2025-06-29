@@ -1908,7 +1908,7 @@
 @endif
 
 <div class="fixed bottom-0 right-0 p-4 text-xs text-gray-500 opacity-70 dark:text-white">
-    © molxno, Property of a Backend Magician.<br>
+    © molxno, Property of a Backend Wizard.<br>
     Made with ❤️
 </div>
 </body>
