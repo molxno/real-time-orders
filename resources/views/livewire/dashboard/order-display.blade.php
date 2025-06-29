@@ -32,7 +32,7 @@
                             :class="{'text-green-600 bg-green-200': currentStatus === 'delivered',
                                     'text-blue-600 bg-blue-200': currentStatus === 'shipped',
                                     'text-yellow-600 bg-yellow-200': currentStatus === 'processing',
-                                    'text-gray-600 bg-gray-200': currentStatus === 'pending'}">
+                                    'text-gray-600 bg-gray-200': currentStatus === 'created'}">
                             <span x-text="currentStatus.charAt(0).toUpperCase() + currentStatus.slice(1)"></span>
                         </div>
                     </div>
@@ -42,11 +42,11 @@
                             :class="{'bg-green-500': currentStatus === 'delivered',
                                     'bg-blue-500': currentStatus === 'shipped',
                                     'bg-yellow-500': currentStatus === 'processing',
-                                    'bg-gray-500': currentStatus === 'pending'}">
+                                    'bg-gray-500': currentStatus === 'created'}">
                         </div>
                     </div>
                     <div class="flex justify-between text-xs">
-                        <span class="text-gray-500">Pending</span>
+                        <span class="text-gray-500">Created</span>
                         <span class="text-gray-500">Processing</span>
                         <span class="text-gray-500">Shipped</span>
                         <span class="text-gray-500">Delivered</span>
@@ -168,7 +168,7 @@
                         this.updateProgressBar();
                     });
                 @else
-                this.currentStatus = 'pending';
+                this.currentStatus = 'created';
                 this.updateProgressBar();
                 @endif
             },
@@ -183,7 +183,7 @@
                     this.progressBarWidth = 100;
                 }
                 else {
-                    this.progressBarWidth = 10; // Default for pending
+                    this.progressBarWidth = 10; // Default for created
                 }
             }
         }));
