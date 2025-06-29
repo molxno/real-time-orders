@@ -1799,7 +1799,7 @@
             class="text-[13px] leading-[20px] flex-1 p-6 pb-12 lg:p-20 bg-white dark:bg-[#161615] dark:text-[#EDEDEC] shadow-[inset_0px_0px_0px_1px_rgba(26,26,0,0.16)] dark:shadow-[inset_0px_0px_0px_1px_#fffaed2d] rounded-es-lg rounded-ee-lg lg:rounded-ss-lg lg:rounded-ee-none">
             <h1 class="mb-1 font-medium">Real-Time Orders</h1>
             <p class="mb-2 text-[#706f6c] dark:text-[#A1A09A]">This is a test project built with <strong>Laravel
-                    Reverb</strong> and <strong>Laravel Cloud</strong>, showcasing real-time order management using the
+                    Reverb, Laravel Pulse</strong> and <strong>Laravel Forge</strong>, showcasing real-time order management using the
                 power of the Laravel ecosystem.</p>
             <ul class="flex flex-col mb-4 lg:mb-6">
                 <li class="flex items-center gap-4 py-2 relative before:border-l before:border-[#e3e3e0] dark:before:border-[#3E3E3A] before:top-1/2 before:bottom-0 before:left-[0.4rem] before:absolute">
